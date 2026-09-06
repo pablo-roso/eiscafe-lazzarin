@@ -354,6 +354,19 @@ h1, h2, h3 {
 
 .map-link:hover { text-decoration: underline; }
 
+.tel-link {
+  margin: 6px 0 0 !important;
+}
+
+.tel-link a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.tel-link a:hover { color: var(--pink-deep); text-decoration: underline; }
+
 .hours-card {
   background: var(--pink-soft);
   border-radius: var(--radius);
@@ -366,9 +379,20 @@ h1, h2, h3 {
   margin-bottom: 0.3em;
 }
 
+.hours-location {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--pink-deep);
+  margin: 16px 0 0;
+}
+
+.hours-card p.hours-location:first-of-type { margin-top: 12px; }
+
 .hours-card ul {
   list-style: none;
-  margin: 12px 0 0;
+  margin: 8px 0 0;
   padding: 0;
 }
 
