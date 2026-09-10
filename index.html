@@ -1,200 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eiscafé Lazzarin — Freiburg im Breisgau</title>
-<meta name="description" content="Eiscafé Lazzarin am Münsterplatz in Freiburg: hausgemachtes Eis, italienische Tradition, mitten in der Altstadt.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eiscafé Lazzarin — Münsterplatz 6 und Rathausgasse 12, Freiburg</title>
+<meta name="description" content="Eiscafé Lazzarin in der Freiburger Altstadt: seit über 60 Jahren hausgemachtes Eis, dazu Crêpes, Waffeln und Kaffee. Zwei Häuser — Münsterplatz 6 mit Balkon über dem Markt und Rathausgasse 12." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f8f3ea'/%3E%3Ccircle cx='16' cy='11' r='7' fill='%23e8697d'/%3E%3Cpath d='M9 15h14l-7 14z' fill='%23c99a3f'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<header class="site-header">
+<a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+<header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="logo" href="#top">
-      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M32 30 L44 30 L34 58 Q32 62 30 58 Z" fill="#e8b98a" stroke="#c9925a" stroke-width="1.5"/>
-        <path d="M32 6 C21 6 13 14 13 23 C13 27 15 30 19 30 L45 30 C49 30 51 27 51 23 C51 14 43 6 32 6 Z" fill="#f7d7de"/>
-        <circle cx="24" cy="16" r="4.5" fill="#fbe9ec"/>
-        <circle cx="36" cy="12" r="5" fill="#fbe9ec"/>
-        <circle cx="43" cy="20" r="4" fill="#fbe9ec"/>
+    <a class="brand" href="#top" aria-label="Eiscafé Lazzarin — Start">
+      <svg class="brand-mark" viewBox="0 0 34 40" fill="none" aria-hidden="true">
+        <circle cx="17" cy="12" r="9" fill="currentColor" />
+        <circle cx="10" cy="15" r="6.4" fill="#8fb98a" />
+        <circle cx="24" cy="15" r="6.4" fill="#f3e2c0" />
+        <path d="M6 19h22L17 39z" fill="#c99a3f" />
+        <path d="M10 23l10 10M14 21l9 9" stroke="#a87d2c" stroke-width="1.4" />
       </svg>
-      <span class="logo-text">Eiscafé Lazzarin</span>
+      <span class="brand-text">
+        <span class="brand-name">Lazzarin</span>
+        <span class="brand-sub">Eiscafé seit über 60 Jahren</span>
+      </span>
     </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#kontakt">Standort &amp; Kontakt</a>
-      <a href="#kontakt" class="nav-cta">Kontakt</a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#balkon">Der Balkon</a></li>
+        <li><a href="#haeuser">Zwei Häuser</a></li>
+        <li><a href="#karte">Nicht nur Eis</a></li>
+        <li><a href="#zeiten">Öffnungszeiten</a></li>
+      </ul>
     </nav>
+
+    <span class="header-status" id="headerStatus" hidden></span>
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
+  <!-- ================= HERO =================
+       Das Haus hat etwas, das kein anderes Eiscafé in Freiburg hat:
+       einen Balkon über dem Münstermarkt. Das gehört nach vorn, nicht
+       in den vierten Absatz. -->
   <section class="hero">
-    <div class="hero-blob hero-blob--mint" aria-hidden="true"></div>
-    <div class="hero-blob hero-blob--pink" aria-hidden="true"></div>
     <div class="wrap hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">Eiscafé &middot; Freiburg im Breisgau</p>
-        <h1>Eiscafé <span class="script">Lazzarin</span></h1>
-        <p class="claim">Italienische Eis-Tradition, einen Schritt vom Freiburger Münster entfernt.</p>
-        <p class="hero-sub">Mitten in der Altstadt am Münsterplatz gelegen &mdash; ein Ort für eine kurze Pause, eine Kugel Lieblingseis und einen Blick auf das Freiburger Münster.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Münsterplatz 6 &amp; Rathausgasse 12 · Freiburger Altstadt</p>
+        <h1>Der beste Platz über dem <em>Münstermarkt</em> ist ein Balkon.</h1>
+        <p class="hero-lead">
+          Unten stehen die Marktstände, gegenüber das Münster, und dazwischen
+          sitzen Sie mit einem Becher Eis. Seit über sechzig Jahren dieselbe
+          Aussicht — und, wenn es nach uns geht, dieselben Sorten.
+        </p>
+
+        <div class="status-badge" id="statusBadge" hidden>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="statusText"></span>
+        </div>
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
-          <a class="btn btn-ghost" href="#ueber-uns">Mehr erfahren</a>
+          <a class="btn btn-primary" href="#haeuser">Welches Haus für was</a>
+          <a class="btn btn-outline" href="tel:+497611379917">Anrufen</a>
         </div>
       </div>
+
+      <!-- Blick vom Balkon: Geländer im Vordergrund, Marktstände,
+           dahinter der Münsterturm. -->
       <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 240 320" class="cone-illustration">
-          <ellipse cx="120" cy="300" rx="70" ry="14" fill="#dff2e9"/>
-          <path d="M96 150 L144 150 L126 270 Q120 282 114 270 Z" fill="#e8b98a" stroke="#c9925a" stroke-width="2"/>
-          <path d="M100 165 L140 165" stroke="#c9925a" stroke-width="1.5" opacity="0.6"/>
-          <path d="M104 190 L136 190" stroke="#c9925a" stroke-width="1.5" opacity="0.6"/>
-          <path d="M108 215 L132 215" stroke="#c9925a" stroke-width="1.5" opacity="0.6"/>
-          <path d="M112 240 L128 240" stroke="#c9925a" stroke-width="1.5" opacity="0.6"/>
-          <circle cx="120" cy="120" r="46" fill="#f6a8bb"/>
-          <circle cx="93" cy="100" r="34" fill="#a8ddc9"/>
-          <circle cx="148" cy="98" r="30" fill="#fff2df"/>
-          <circle cx="105" cy="70" r="6" fill="#e8637f"/>
-          <circle cx="132" cy="62" r="5" fill="#4fae8c"/>
-          <circle cx="150" cy="78" r="5" fill="#e8b98a"/>
-          <circle cx="80" cy="86" r="4" fill="#e8637f"/>
+        <svg viewBox="0 0 360 320" fill="none">
+          <rect width="360" height="320" fill="#cfe0e8" />
+          <!-- Himmel und Sonne -->
+          <circle cx="292" cy="56" r="30" fill="#f6dfa4" />
+          <!-- Münsterturm -->
+          <g>
+            <path d="M120 300V150h56v150z" fill="#c4785a" />
+            <path d="M120 150h56l-8-34h-40z" fill="#a85f45" />
+            <path d="M148 18l30 98h-60z" fill="#b56b4e" />
+            <path d="M148 18l30 98h-30z" fill="#a85f45" />
+            <g fill="#8c4a34">
+              <rect x="132" y="166" width="14" height="26" rx="7" />
+              <rect x="152" y="166" width="14" height="26" rx="7" />
+              <rect x="132" y="212" width="14" height="26" rx="7" />
+              <rect x="152" y="212" width="14" height="26" rx="7" />
+            </g>
+            <circle cx="148" cy="140" r="9" fill="#f3e2c0" stroke="#8c4a34" stroke-width="2" />
+          </g>
+          <!-- Marktstände -->
+          <g>
+            <rect x="20" y="228" width="86" height="52" fill="#f3e2c0" />
+            <path d="M14 228h98l-10-18H24z" fill="#e8697d" />
+            <rect x="196" y="234" width="80" height="46" fill="#f3e2c0" />
+            <path d="M190 234h92l-9-17h-74z" fill="#8fb98a" />
+            <rect x="286" y="240" width="62" height="40" fill="#f3e2c0" />
+            <path d="M280 240h74l-8-15h-58z" fill="#e8697d" />
+          </g>
+          <!-- Pflaster -->
+          <rect y="280" width="360" height="40" fill="#d8cdbb" />
+          <g stroke="#c3b6a1" stroke-width="2"><path d="M0 292h360M0 306h360M40 280v40M120 280v40M200 280v40M280 280v40" /></g>
+
+          <!-- Balkongeländer im Vordergrund -->
+          <g>
+            <rect y="252" width="360" height="10" rx="5" fill="#c99a3f" />
+            <rect y="316" width="360" height="10" rx="5" fill="#c99a3f" />
+            <g stroke="#c99a3f" stroke-width="6" stroke-linecap="round">
+              <path d="M24 258v62M72 258v62M120 258v62M168 258v62M216 258v62M264 258v62M312 258v62" />
+            </g>
+          </g>
+
+          <!-- Eisbecher auf der Brüstung -->
+          <g transform="translate(276,182)">
+            <path d="M8 34h44l-6 46a10 10 0 0 1-10 8H24a10 10 0 0 1-10-8z" fill="#fffaf0" stroke="#c99a3f" stroke-width="2.6" />
+            <circle cx="20" cy="30" r="12" fill="#e8697d" />
+            <circle cx="40" cy="28" r="12" fill="#8fb98a" />
+            <circle cx="30" cy="16" r="11" fill="#f3e2c0" />
+            <path d="M46 10l6-16" stroke="#c99a3f" stroke-width="3" stroke-linecap="round" />
+          </g>
         </svg>
       </div>
     </div>
   </section>
 
-  <section id="ueber-uns" class="section ueber-uns">
-    <div class="wrap">
-      <p class="eyebrow">Über uns</p>
-      <h2>Eis wie aus der guten alten Zeit</h2>
-      <div class="ueber-text">
-        <p>Seit über 60 Jahren gehört das Eiscafé Lazzarin zu den traditionsreichsten Adressen der Freiburger Altstadt &mdash; direkt gegenüber dem Münster. Hier wird Eis noch so zubereitet, wie man es aus klassischen italienischen Gelaterien kennt: mit Ruhe, guten Zutaten und einem Gespür für die klassischen Sorten.</p>
-        <p>Neben hausgemachtem Eis gehören Crêpes, Kaffee und Waffeln zum Angebot &mdash; genossen auf der großen Terrasse oder auf dem legendären Balkon mit Blick auf Markt und Münster. Die Lage mitten in der Altstadt, nur wenige Schritte vom Münsterplatz entfernt, macht das Café zu einem natürlichen Treffpunkt &mdash; für Einheimische auf dem Weg zum Markt ebenso wie für Gäste, die Freiburg zum ersten Mal entdecken.</p>
-        <p>Ob eine schnelle Kugel zum Mitnehmen oder ein gemütlicher Becher zum Verweilen &mdash; das Eiscafé Lazzarin steht für die einfachen, guten Dinge italienischer Eiskultur.</p>
+  <!-- Terrazzo-Band -->
+  <div class="terrazzo" aria-hidden="true"></div>
+
+  <!-- ================= DER BALKON ================= -->
+  <section class="section balcony" id="balkon">
+    <div class="wrap balcony-grid">
+      <div>
+        <p class="kicker">Seit über 60 Jahren</p>
+        <h2>Eis wie damals, weil es damals schon gut war</h2>
+        <p>
+          Das Lazzarin gehört zu den ältesten Adressen der Freiburger Altstadt.
+          Gemacht wird das Eis so, wie man es aus klassischen italienischen
+          Gelaterien kennt: mit Ruhe, guten Zutaten und einem Gespür für die
+          Sorten, die man nicht neu erfinden muss.
+        </p>
+        <p>
+          Am Münsterplatz gibt es die große Terrasse — und darüber den Balkon,
+          von dem aus man auf Markt und Münster schaut. Am Markttag ist das der
+          beste Sitzplatz der Stadt, und am frühen Abend, wenn die Stände
+          abgebaut sind, der ruhigste.
+        </p>
+        <p>
+          Für Einheimische auf dem Weg zum Markt, für Gäste, die Freiburg zum
+          ersten Mal sehen: Zwei sehr verschiedene Anlässe, derselbe Becher.
+        </p>
       </div>
+
+      <ul class="balcony-facts">
+        <li><strong>60+</strong><span>Jahre am Münsterplatz</span></li>
+        <li><strong>2</strong><span>Häuser in der Altstadt</span></li>
+        <li><strong>ab 8 Uhr</strong><span>öffnet die Rathausgasse</span></li>
+        <li><strong>bis 21 Uhr</strong><span>samstags am Münsterplatz</span></li>
+      </ul>
     </div>
   </section>
 
-  <section id="highlights" class="section highlights">
+  <!-- ================= ZWEI HÄUSER =================
+       Der alte Entwurf listete beide Adressen im Kontaktblock
+       untereinander. Das ist zu wenig: Die beiden Häuser sind für
+       unterschiedliche Anlässe da, und genau das will man wissen,
+       bevor man losläuft. -->
+  <section class="section houses" id="haeuser">
     <div class="wrap">
-      <p class="eyebrow">Highlights</p>
-      <h2>Was das Eiscafé Lazzarin ausmacht</h2>
-      <div class="card-grid">
-
-        <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="24" cy="20" r="14" fill="#f6a8bb"/>
-              <path d="M17 30 L31 30 L25 42 Q24 44 23 42 Z" fill="#e8b98a"/>
-            </svg>
-          </div>
-          <h3>Hausgemachtes Eis</h3>
-          <p>Eis, das mit Sorgfalt und traditionellem Handwerk zubereitet wird &mdash; für einen Geschmack, der an echte italienische Gelaterien erinnert.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="16" cy="22" r="9" fill="#a8ddc9"/>
-              <circle cx="32" cy="18" r="9" fill="#f6a8bb"/>
-              <circle cx="24" cy="32" r="9" fill="#fff2df" stroke="#e8b98a" stroke-width="1.5"/>
-            </svg>
-          </div>
-          <h3>Vielfalt an Sorten</h3>
-          <p>Von cremiger Vanille bis zu fruchtigem Sorbet &mdash; für jeden Geschmack findet sich die passende Kugel.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M24 6 L38 20 C38 30 32 38 24 42 C16 38 10 30 10 20 Z" fill="#f6a8bb"/>
-              <circle cx="24" cy="21" r="6" fill="#fff8f0"/>
-            </svg>
-          </div>
-          <h3>Mitten am Münsterplatz</h3>
-          <p>Zentral in der Freiburger Altstadt gelegen, in unmittelbarer Nähe des Münsters &mdash; ideal für eine Pause zwischen Marktbesuch und Stadtbummel.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 48 48" aria-hidden="true">
-              <rect x="10" y="20" width="28" height="18" rx="3" fill="#a8ddc9"/>
-              <path d="M14 20 L14 14 Q14 10 18 10 L30 10 Q34 10 34 14 L34 20" fill="none" stroke="#4fae8c" stroke-width="2.5"/>
-            </svg>
-          </div>
-          <h3>Zum Mitnehmen oder Verweilen</h3>
-          <p>Ob schnelle Erfrischung to go oder gemütliche Pause auf der Terrasse und dem legendären Balkon mit Blick auf den Markt &mdash; das Eiscafé passt sich dem Tempo des Tages an.</p>
-        </article>
-
+      <div class="section-head">
+        <p class="kicker">Zwei Häuser</p>
+        <h2>Welches ist heute das richtige?</h2>
+        <p class="section-note">
+          Beide gehören zum Lazzarin, beide führen dasselbe Eis — aber sie
+          taugen für Verschiedenes.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <section id="kontakt" class="section kontakt">
-    <div class="wrap kontakt-inner">
-      <div class="kontakt-text">
-        <p class="eyebrow">Standort &amp; Kontakt</p>
-        <h2>Besuchen Sie uns in der Altstadt</h2>
-        <p class="kontakt-lead">Das Eiscafé Lazzarin ist in der Freiburger Altstadt zu finden, mit Adressen am Münsterplatz und in der Rathausgasse.</p>
-
-        <div class="address-list">
-          <div class="address-card">
+      <div class="house-grid">
+        <article class="house-card" id="house-muenster">
+          <header>
+            <span class="hc-label">Haus I</span>
             <h3>Münsterplatz 6</h3>
-            <p>79098 Freiburg im Breisgau</p>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=M%C3%BCnsterplatz%206%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route auf Google Maps &rarr;</a>
-            <p class="tel-link"><a href="tel:+497611379917">Tel. 0761 1379917</a></p>
-          </div>
-          <div class="address-card">
+            <p class="hc-claim">Das mit dem Balkon.</p>
+          </header>
+          <dl>
+            <div><dt>Öffnet</dt><dd>täglich 9:00 Uhr</dd></div>
+            <div><dt>Schließt</dt><dd>20:30 Uhr, samstags 21:00 Uhr</dd></div>
+            <div><dt>Telefon</dt><dd><a href="tel:+497611379917">0761 1379917</a></dd></div>
+          </dl>
+          <ul class="hc-good">
+            <li>Markttag mit Blick von oben</li>
+            <li>Große Terrasse für Gruppen</li>
+            <li>Erstes Mal in Freiburg</li>
+          </ul>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BCnsterplatz%206%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route zum Münsterplatz</a>
+        </article>
+
+        <article class="house-card" id="house-rathaus">
+          <header>
+            <span class="hc-label">Haus II</span>
             <h3>Rathausgasse 12</h3>
-            <p>79098 Freiburg im Breisgau</p>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Rathausgasse%2012%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route auf Google Maps &rarr;</a>
-            <p class="tel-link"><a href="tel:+4976135319">Tel. 0761 35319</a></p>
-          </div>
-        </div>
-
-        <div class="hours-card">
-          <h3>Öffnungszeiten</h3>
-          <p class="hours-location">Münsterplatz 6</p>
-          <ul>
-            <li><span>Mo &ndash; Fr</span><span>09:00 &ndash; 20:30 Uhr</span></li>
-            <li><span>Sa</span><span>09:00 &ndash; 21:00 Uhr</span></li>
-            <li><span>So</span><span>09:00 &ndash; 20:30 Uhr</span></li>
+            <p class="hc-claim">Das, das früher aufmacht.</p>
+          </header>
+          <dl>
+            <div><dt>Öffnet</dt><dd>Mo–Sa 8:00 Uhr · So 9:00 Uhr</dd></div>
+            <div><dt>Schließt</dt><dd id="rgClose">21:00 Uhr (April–Oktober)</dd></div>
+            <div><dt>Telefon</dt><dd><a href="tel:+4976135319">0761 35319</a></dd></div>
+          </dl>
+          <ul class="hc-good">
+            <li>Kaffee vor der Arbeit</li>
+            <li>Eis zum Mitnehmen, ohne Gedränge</li>
+            <li>Der Weg vom Rathausplatz</li>
           </ul>
-          <p class="hours-location">Rathausgasse 12 &middot; April&ndash;Oktober</p>
-          <ul>
-            <li><span>Mo &ndash; Sa</span><span>08:00 &ndash; 21:00 Uhr</span></li>
-            <li><span>So &amp; Feiertage</span><span>09:00 &ndash; 21:00 Uhr</span></li>
-          </ul>
-          <p class="hours-location">Rathausgasse 12 &middot; November&ndash;März</p>
-          <ul>
-            <li><span>Mo &ndash; Sa</span><span>08:00 &ndash; 20:00 Uhr</span></li>
-            <li><span>So &amp; Feiertage</span><span>09:00 &ndash; 20:00 Uhr</span></li>
-          </ul>
-          <p class="placeholder-note">Angaben laut öffentlichen Verzeichniseinträgen (u.&nbsp;a. Freiburg-Tourismus, Branchenverzeichnisse) &mdash; Abweichungen möglich, bitte vor Ort/telefonisch bestätigen.</p>
-        </div>
-
-        <a class="btn btn-primary" href="mailto:info@eiscafe-lazzarin.de">
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-icon"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-          info@eiscafe-lazzarin.de
-        </a>
-        <p class="placeholder-note">Platzhalter-E-Mail-Adresse &mdash; bitte durch die tatsächliche Kontaktadresse ersetzen.</p>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Rathausgasse%2012%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">Route zur Rathausgasse</a>
+        </article>
       </div>
 
-      <div class="kontakt-art" aria-hidden="true">
-        <svg viewBox="0 0 200 240" class="map-illustration">
-          <rect x="10" y="10" width="180" height="220" rx="18" fill="#eaf7f0"/>
-          <path d="M30 60 Q100 30 170 60 L170 90 Q100 60 30 90 Z" fill="#dff2e9"/>
-          <path d="M30 150 Q100 120 170 150 L170 180 Q100 150 30 180 Z" fill="#fbe4ea"/>
-          <circle cx="100" cy="118" r="10" fill="#e8637f"/>
-          <path d="M100 108 C90 108 84 116 84 124 C84 136 100 150 100 150 C100 150 116 136 116 124 C116 116 110 108 100 108 Z" fill="#e8637f"/>
-          <circle cx="100" cy="122" r="5" fill="#fff8f0"/>
-        </svg>
+      <p class="season-note" id="seasonNote">
+        Die Rathausgasse hat eine Sommer- und eine Winterzeit: April bis Oktober
+        bis 21 Uhr, November bis März bis 20 Uhr.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= NICHT NUR EIS ================= -->
+  <section class="section menu" id="karte">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Auf der Karte</p>
+        <h2>Nicht nur Eis</h2>
+        <p class="section-note">
+          Ein Eiscafé, das nur im Sommer funktioniert, hätte keine sechzig
+          Jahre gehalten.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <span class="mc-scoop" style="--s:#e8697d" aria-hidden="true"></span>
+          <h3>Hausgemachtes Eis</h3>
+          <p>Von cremiger Vanille bis zum fruchtigen Sorbet, nach klassischer Gelateria-Art zubereitet. Kugel, Becher oder Waffel.</p>
+        </article>
+        <article class="menu-card">
+          <span class="mc-scoop" style="--s:#c99a3f" aria-hidden="true"></span>
+          <h3>Crêpes</h3>
+          <p>Frisch gebacken, süß gefüllt. Die Antwort auf einen Nachmittag, an dem Eis allein zu kalt wäre.</p>
+        </article>
+        <article class="menu-card">
+          <span class="mc-scoop" style="--s:#8fb98a" aria-hidden="true"></span>
+          <h3>Waffeln</h3>
+          <p>Warm, mit Puderzucker oder einer Kugel obendrauf — der Grund, warum auch im Oktober jemand auf dem Balkon sitzt.</p>
+        </article>
+        <article class="menu-card">
+          <span class="mc-scoop" style="--s:#6f4b39" aria-hidden="true"></span>
+          <h3>Kaffee</h3>
+          <p>Espresso im Stehen, Cappuccino im Sitzen. In der Rathausgasse ab acht Uhr morgens, lange bevor jemand an Eis denkt.</p>
+        </article>
+      </div>
+
+      <p class="menu-note">
+        Die Aufstellung folgt öffentlich zugänglichen Angaben. Sorten und Preise
+        stehen auf der Karte in den Häusern.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= ÖFFNUNGSZEITEN ================= -->
+  <section class="section hours" id="zeiten">
+    <div class="wrap hours-grid">
+      <div>
+        <p class="kicker">Zeiten</p>
+        <h2>Wann welches Haus offen hat</h2>
+        <p class="section-note">
+          Der Münsterplatz hält das ganze Jahr dieselben Zeiten. Die
+          Rathausgasse wechselt mit der Saison — das ist der einzige Stolperstein.
+        </p>
+        <p class="hours-source">
+          Angaben laut öffentlichen Verzeichniseinträgen (u.&nbsp;a.
+          Freiburg-Tourismus, Branchenverzeichnisse). Abweichungen sind
+          möglich; vor einem Besuch telefonisch oder vor Ort bestätigen.
+        </p>
+      </div>
+
+      <div class="hours-tables">
+        <div class="hours-block">
+          <h3>Münsterplatz 6</h3>
+          <ul id="hoursMuenster">
+            <li data-day="1"><span>Mo</span><em>9:00 – 20:30</em></li>
+            <li data-day="2"><span>Di</span><em>9:00 – 20:30</em></li>
+            <li data-day="3"><span>Mi</span><em>9:00 – 20:30</em></li>
+            <li data-day="4"><span>Do</span><em>9:00 – 20:30</em></li>
+            <li data-day="5"><span>Fr</span><em>9:00 – 20:30</em></li>
+            <li data-day="6"><span>Sa</span><em>9:00 – 21:00</em></li>
+            <li data-day="0"><span>So</span><em>9:00 – 20:30</em></li>
+          </ul>
+        </div>
+
+        <div class="hours-block">
+          <h3>Rathausgasse 12 <span class="season-tag" id="seasonTag">Saison</span></h3>
+          <ul id="hoursRathaus">
+            <li data-day="1"><span>Mo</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="2"><span>Di</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="3"><span>Mi</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="4"><span>Do</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="5"><span>Fr</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="6"><span>Sa</span><em class="rg-week">8:00 – 21:00</em></li>
+            <li data-day="0"><span>So</span><em class="rg-sun">9:00 – 21:00</em></li>
+          </ul>
+          <p class="block-note">Sonn- und Feiertage eine Stunde später.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -203,10 +325,24 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>&copy; 2026 Eiscafé Lazzarin</p>
-    <p class="footer-note">Website-Entwurf &mdash; dies ist ein unverbindlicher Gestaltungsvorschlag, keine offizielle Unternehmensseite.</p>
+    <div class="footer-brand">
+      <span class="brand-name">Eiscafé Lazzarin</span>
+      <p>Münsterplatz 6 &amp; Rathausgasse 12 · 79098 Freiburg im Breisgau<br />Hausgemachtes Eis, Crêpes, Waffeln und Kaffee — seit über 60 Jahren.</p>
+    </div>
+    <nav class="footer-links" aria-label="Fußzeile">
+      <a href="#balkon">Der Balkon</a>
+      <a href="#haeuser">Zwei Häuser</a>
+      <a href="#zeiten">Öffnungszeiten</a>
+      <a href="tel:+497611379917">0761 1379917</a>
+      <a href="tel:+4976135319">0761 35319</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Eiscafé Lazzarin</span>
+    <span class="footer-note">Unverbindlicher Website-Entwurf, keine offizielle Unternehmensseite. Angaben aus öffentlichen Verzeichnissen; Impressum und Datenschutzerklärung fehlen und sind vor einem echten Launch Pflicht.</span>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
